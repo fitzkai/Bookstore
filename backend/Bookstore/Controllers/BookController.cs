@@ -16,7 +16,7 @@ namespace Bookstore.Controllers
         }
 
         [HttpGet("AllBooks")]
-        public IActionResult GetBooks(int cardCount = 5, int pageNum = 1, string? sort = "title") 
+        public IActionResult GetBooks(int cardCount = 5, int pageNum = 1, string? sort = "title", [FromQuery] List<string>? bookTypes = null) 
         {
 
             IQueryable<Book> bookSort = _bookContext.Books;
@@ -28,6 +28,11 @@ namespace Bookstore.Controllers
             else if (sort == "title_desc")
             {
                 bookSort = bookSort.OrderByDescending(x => x.Title);
+            }
+
+            if (bookTypes != null && bookTypes.Any())
+            {
+                bookSort = bookSort.Where(b => bookTypes.Contains(b.Category));
             }
 
             var books = bookSort
@@ -42,6 +47,17 @@ namespace Bookstore.Controllers
                 Books = books,
                 TotalNumBooks = totalNumBooks,
             });
+        }
+
+        [HttpGet("GetBookTypes")]
+        public IActionResult GetBookTypes()
+        {
+            var bookTypes = _bookContext.Books
+                .Select(b => b.Category)
+                .Distinct()
+                .ToList();
+
+            return Ok(bookTypes);
         }
     }
 }

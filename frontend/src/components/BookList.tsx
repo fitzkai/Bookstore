@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Book } from "./types/Book";
+import { Book } from "../types/Book";
 
 function BookList()
 {
@@ -31,9 +31,6 @@ function BookList()
 
     return (
         <>
-            <h1>Hilton's Booklist</h1>
-            <br />
-
             {/* add sorting */}
             <label>Sort by: </label>
             <select value={sort} onChange={handleSortChange}>

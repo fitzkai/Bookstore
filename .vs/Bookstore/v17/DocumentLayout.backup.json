@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\fitzk\\OneDrive - Brigham Young University\\IS413\\Bookstore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F7D44F22-FF96-43DB-B375-88B0F3F3C43C}|backend\\Bookstore\\Bookstore.csproj|c:\\users\\fitzk\\onedrive - brigham young university\\is413\\bookstore\\backend\\bookstore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7D44F22-FF96-43DB-B375-88B0F3F3C43C}|backend\\Bookstore\\Bookstore.csproj|solutionrelative:backend\\bookstore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F7D44F22-FF96-43DB-B375-88B0F3F3C43C}|backend\\Bookstore\\Bookstore.csproj|c:\\users\\fitzk\\onedrive - brigham young university\\is413\\bookstore\\backend\\bookstore\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7D44F22-FF96-43DB-B375-88B0F3F3C43C}|backend\\Bookstore\\Bookstore.csproj|solutionrelative:backend\\bookstore\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7D44F22-FF96-43DB-B375-88B0F3F3C43C}|backend\\Bookstore\\Bookstore.csproj|c:\\users\\fitzk\\onedrive - brigham young university\\is413\\bookstore\\backend\\bookstore\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F7D44F22-FF96-43DB-B375-88B0F3F3C43C}|backend\\Bookstore\\Bookstore.csproj|solutionrelative:backend\\bookstore\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7D44F22-FF96-43DB-B375-88B0F3F3C43C}|backend\\Bookstore\\Bookstore.csproj|c:\\users\\fitzk\\onedrive - brigham young university\\is413\\bookstore\\backend\\bookstore\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F7D44F22-FF96-43DB-B375-88B0F3F3C43C}|backend\\Bookstore\\Bookstore.csproj|solutionrelative:backend\\bookstore\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{F7D44F22-FF96-43DB-B375-88B0F3F3C43C}|backend\\Bookstore\\Bookstore.csproj|c:\\users\\fitzk\\onedrive - brigham young university\\is413\\bookstore\\backend\\bookstore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7D44F22-FF96-43DB-B375-88B0F3F3C43C}|backend\\Bookstore\\Bookstore.csproj|solutionrelative:backend\\bookstore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F7D44F22-FF96-43DB-B375-88B0F3F3C43C}|backend\\Bookstore\\Bookstore.csproj|c:\\users\\fitzk\\onedrive - brigham young university\\is413\\bookstore\\backend\\bookstore\\data\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,33 +38,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\fitzk\\OneDrive - Brigham Young University\\IS413\\Bookstore\\backend\\Bookstore\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "backend\\Bookstore\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\fitzk\\OneDrive - Brigham Young University\\IS413\\Bookstore\\backend\\Bookstore\\Properties\\launchSettings.json",
-              "RelativeToolTip": "backend\\Bookstore\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAIwA0AAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-19T03:36:51.003Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "BookController.cs",
               "DocumentMoniker": "C:\\Users\\fitzk\\OneDrive - Brigham Young University\\IS413\\Bookstore\\backend\\Bookstore\\Controllers\\BookController.cs",
               "RelativeDocumentMoniker": "backend\\Bookstore\\Controllers\\BookController.cs",
               "ToolTip": "C:\\Users\\fitzk\\OneDrive - Brigham Young University\\IS413\\Bookstore\\backend\\Bookstore\\Controllers\\BookController.cs",
               "RelativeToolTip": "backend\\Bookstore\\Controllers\\BookController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwA8AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAACIAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-17T22:53:56.446Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Book.cs",
               "DocumentMoniker": "C:\\Users\\fitzk\\OneDrive - Brigham Young University\\IS413\\Bookstore\\backend\\Bookstore\\Data\\Book.cs",
               "RelativeDocumentMoniker": "backend\\Bookstore\\Data\\Book.cs",
@@ -84,7 +63,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "BookDbContext.cs",
               "DocumentMoniker": "C:\\Users\\fitzk\\OneDrive - Brigham Young University\\IS413\\Bookstore\\backend\\Bookstore\\Data\\BookDbContext.cs",
               "RelativeDocumentMoniker": "backend\\Bookstore\\Data\\BookDbContext.cs",
@@ -96,7 +75,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\fitzk\\OneDrive - Brigham Young University\\IS413\\Bookstore\\backend\\Bookstore\\Program.cs",
               "RelativeDocumentMoniker": "backend\\Bookstore\\Program.cs",
@@ -106,18 +85,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-17T21:01:36.069Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\fitzk\\OneDrive - Brigham Young University\\IS413\\Bookstore\\backend\\Bookstore\\appsettings.json",
-              "RelativeDocumentMoniker": "backend\\Bookstore\\appsettings.json",
-              "ToolTip": "C:\\Users\\fitzk\\OneDrive - Brigham Young University\\IS413\\Bookstore\\backend\\Bookstore\\appsettings.json",
-              "RelativeToolTip": "backend\\Bookstore\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-17T21:01:07.671Z"
             }
           ]
         }
