@@ -19,7 +19,7 @@ namespace Bookstore.Controllers
         public IActionResult GetBooks(int cardCount = 5, int pageNum = 1, string? sort = "title", [FromQuery] List<string>? bookTypes = null) 
         {
 
-            IQueryable<Book> bookSort = _bookContext.Books;
+            var bookSort = _bookContext.Books.AsQueryable();
 
             if (sort == "title")
             {

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import './CategoryFilter.css'
 
 function CategoryFilter(
     {selectedCategories, setSelectedCategories}: 
@@ -10,7 +11,7 @@ function CategoryFilter(
     const [categories, setCategories] = useState<string[]>([]);
     useEffect(() => {
         const fetchCategories = async () => {
-            try{
+            try {
             const response = await fetch("https://localhost:5000/Book/GetBookTypes")
             const data = await response.json();
 

@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { Book } from "../types/Book";
+import { useNavigate } from "react-router-dom";
 
-function BookList()
+function BookList({selectedCategories}: {selectedCategories: string[]})
 {
     const [books, setBooks] = useState<Book[]>([]);
     const [cardCount, setCardCount] = useState<number>(5);
@@ -9,11 +10,17 @@ function BookList()
     const [totalBooks, setTotalBooks] = useState<number>(0);
     const [totalPages, setTotalPages] = useState<number>(0);
     const [sort, setSort] = useState<string>("title");
+    const navigate = useNavigate();
 
     useEffect(() => {
         const fetchBooks = async () => {
-            const response = await fetch(`https://localhost:5000/Book/AllBooks?cardCount=${cardCount}&pageNum=${pageNum}&sort=${sort}`);
+            const categoryParams = selectedCategories
+                .map((cat) => `bookTypes=${encodeURIComponent(cat)}`)
+                .join("&");
+    
+            const response = await fetch(`https://localhost:5000/Book/AllBooks?cardCount=${cardCount}&pageNum=${pageNum}&sort=${sort}${selectedCategories.length ? `&${categoryParams}`: ''}`);
             const data = await response.json();
+
             setBooks(data.books);
             setTotalBooks(data.totalNumBooks);
             setTotalPages(Math.ceil(totalBooks / cardCount))
@@ -21,7 +28,7 @@ function BookList()
 
         fetchBooks();
 
-    }, [cardCount, pageNum, totalBooks, sort])
+    }, [cardCount, pageNum, totalBooks, sort, selectedCategories])
 
     const handleSortChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
         setSort(e.target.value); // Update sort state
@@ -40,7 +47,7 @@ function BookList()
             <br />
 
             {books.map((b) => (
-            <div id="bookCard" className='card' key={b.bookId}>
+            <div id="bookCard" className='card' key={b.bookID}>
                 <h3 className="card-title">{b.title}</h3>
 
                 <div className="card-body">
@@ -50,8 +57,9 @@ function BookList()
                         <li><strong>ISBN:</strong> {b.isbn}</li>
                         <li><strong>Classification/Category:</strong> {b.classification}/{b.category}</li>
                         <li><strong>Number of Pages:</strong> {b.pageCount}</li>
-                        <li><strong>Price:</strong> {b.price}</li>
+                        <li><strong>Price:</strong> ${b.price}</li>
                     </ul>
+                    <button className="btn btn-success" onClick={() => {navigate(`/buy/${encodeURIComponent(b.title)}/${Number(b.bookID)}/${b.price}`)}}>Purchase</button>
                 </div>
             </div>
             ))}

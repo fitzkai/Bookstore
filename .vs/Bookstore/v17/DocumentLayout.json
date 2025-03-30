@@ -44,7 +44,7 @@
               "RelativeDocumentMoniker": "backend\\Bookstore\\Controllers\\BookController.cs",
               "ToolTip": "C:\\Users\\fitzk\\OneDrive - Brigham Young University\\IS413\\Bookstore\\backend\\Bookstore\\Controllers\\BookController.cs",
               "RelativeToolTip": "backend\\Bookstore\\Controllers\\BookController.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAmwD8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAYwBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-17T22:53:56.446Z",
               "EditorCaption": ""
@@ -71,8 +71,7 @@
               "RelativeToolTip": "backend\\Bookstore\\Data\\BookDbContext.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAwAcAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T21:02:52.6Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-17T21:02:52.6Z"
             },
             {
               "$type": "Document",
@@ -84,8 +83,7 @@
               "RelativeToolTip": "backend\\Bookstore\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T21:01:36.069Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-17T21:01:36.069Z"
             }
           ]
         }
