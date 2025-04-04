@@ -69,3 +69,4 @@ C:\Users\fitzk\OneDrive - Brigham Young University\IS413\Bookstore\backend\Books
 C:\Users\fitzk\OneDrive - Brigham Young University\IS413\Bookstore\backend\Bookstore\obj\Debug\net8.0\Bookstore.genruntimeconfig.cache
 C:\Users\fitzk\OneDrive - Brigham Young University\IS413\Bookstore\backend\Bookstore\obj\Debug\net8.0\ref\Bookstore.dll
 C:\Users\fitzk\OneDrive - Brigham Young University\IS413\Bookstore\backend\Bookstore\obj\Debug\net8.0\Bookstore.sourcelink.json
+C:\Users\fitzk\OneDrive - Brigham Young University\IS413\Bookstore\backend\Bookstore\bin\Debug\net8.0\Bookstore.sqlite

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Book } from "../types/Book";
 import { useNavigate } from "react-router-dom";
+import Pagination from "./Pagination";
 
 function BookList({selectedCategories}: {selectedCategories: string[]})
 {
@@ -63,28 +64,16 @@ function BookList({selectedCategories}: {selectedCategories: string[]})
                 </div>
             </div>
             ))}
-
-            <button disabled={pageNum === 1}  onClick={() => setPageNum(pageNum - 1)}>Previous</button>
-
-            {[...Array(totalPages)].map((_, index) => (
-                    <button key={index + 1} onClick={() => setPageNum(index + 1)} disabled={pageNum === (index + 1)}>
-                        {index + 1}
-                    </button>
-                ))}
-
-            <button disabled={pageNum === totalPages} onClick={() => setPageNum(pageNum + 1)}>Next</button>
-
-            <br />
-            <label>
-                Results per page:
-                <select value={cardCount} onChange={(p) => {setCardCount(Number(p.target.value));
+            <Pagination
+                currentPage={pageNum}
+                totalPages={totalPages}
+                pageSize={cardCount}
+                onPageChange={setPageNum}
+                onPageSizeChange={(newSize) => {
+                    setCardCount(newSize);
                     setPageNum(1);
-                }}>
-                    <option value="5">5</option>
-                    <option value="10">10</option>
-                    <option value="20">20</option>
-                </select>
-            </label>
+                }}
+            />
         </>
     );
 }

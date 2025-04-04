@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/0ead41df-154a-4a01-b83e-aaafbd93adcb/resourceGroups/appsvc_windows_eastus/providers/Microsoft.Web/sites/Bookstore-Kaitlyn-Backend",
+    "appService.deploySubpath": "backend\\Bookstore\\publish"
+}
