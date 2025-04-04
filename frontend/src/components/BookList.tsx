@@ -19,7 +19,7 @@ function BookList({selectedCategories}: {selectedCategories: string[]})
                 .map((cat) => `bookTypes=${encodeURIComponent(cat)}`)
                 .join("&");
     
-            const response = await fetch(`https://localhost:5000/Book/AllBooks?cardCount=${cardCount}&pageNum=${pageNum}&sort=${sort}${selectedCategories.length ? `&${categoryParams}`: ''}`);
+            const response = await fetch(`https://bookstore-kaitlyn-backend-bqgwdnhtbwcqehca.eastus-01.azurewebsites.net/Book/AllBooks?cardCount=${cardCount}&pageNum=${pageNum}&sort=${sort}${selectedCategories.length ? `&${categoryParams}`: ''}`);
             const data = await response.json();
 
             setBooks(data.books);
